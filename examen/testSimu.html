@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+ 
+  <!-- /pagina de examen simulacro  -->
+  <div  id="exam-simu-page" data-role="page">
+      <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header" data-theme="f">
+          <a href="#home-page"  data-role="button" data-icon="home" data-inline="true" onclick="stopTimer(); resett();">&nbsp;</a>
+          <h1>Simulacro</h1>
+        <a data-role="button" data-icon="flat-time"><span id="tiempo">20:00</span></a>
+      </div>
+      <div data-role="content" >
+        <form id="exam-form" action="#">
+          <label for="medico">Nombres </label>
+          <input type="text" name="medico" id="medico" data-mini="true" placeholder="Dr Hide"/>
+          <label for="address">Email<span class="small-text">(optional)</span></label>
+          <input type="text" name="address" id="address" data-mini="true" placeholder="juanperez@correo.com"/>
+
+          <div data-role="collapsible-set" data-theme="f" data-content-theme="f">
+
+            <div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-collapsed="false">
+              <h3>Pregunta 1</h3>
+                <fieldset data-role="controlgroup" data-mini="true">
+                  <legend>&iquest;Qu&eacute; estructura separa cada fibra card&iacute;aca&#63;</legend>
+
+                  <input type="checkbox" name="checkbox1a" id="checkbox1a" class="custom" />
+                  <label for="checkbox1a">A) Las l&iacute;neas Z</label>
+
+                  <input type="checkbox" name="checkbox1b" id="checkbox1b" class="custom" />
+                  <label for="checkbox1b">B) Las sarc&oacute;meras</label>
+
+                  <input type="checkbox" name="checkbox1c" id="checkbox1c" class="custom" />
+                  <label for="checkbox1c">C) Las bandas I</label>
+
+                  <input type="checkbox" name="checkbox1d" id="checkbox1d" class="custom" />
+                  <label for="checkbox1d">D) El sarcolema</label>
+
+                  <input type="checkbox" name="checkbox1e" id="checkbox1e" class="custom" />
+                  <label for="checkbox1e">E) Las fibras card&iacute;acas no est&aacute;n separadas</label>
+                </fieldset>
+            </div>
+
+            <div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-collapsed="true">
+              <h3>Pregunta 2</h3>
+                <fieldset data-role="controlgroup" data-mini="true">
+                  <legend>&iquest;La unidad respiratoria básica ventilada por un bronquiolo terminal se denomina&#63;</legend>
+                  <input type="checkbox" name="checkbox2a" id="checkbox2a" class="custom" />
+                  <label for="checkbox2a">A) Alveolo</label>
+
+                  <input type="checkbox" name="checkbox2b" id="checkbox2b" class="custom" />
+                  <label for="checkbox2b">B) Acino</label>
+
+                  <input type="checkbox" name="checkbox2c" id="checkbox2c" class="custom" />
+                  <label for="checkbox2c">C) Membrana de intercambio gaseoso</label>
+
+                  <input type="checkbox" name="checkbox2d" id="checkbox2d" class="custom" />
+                  <label for="checkbox2d">D) Interfase alveolo capilar</label>
+
+                  <input type="checkbox" name="checkbox2e" id="checkbox2e" class="custom" />
+                  <label for="checkbox2e">E) Bronquiolo respiratorio</label>
+                </fieldset>
+            </div>
+
+            <div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-collapsed="true">
+              <h3>Pregunta 3</h3>
+                <fieldset data-role="controlgroup" data-mini="true">
+                  <legend>&iquest;Cu&aacute;l es la causa m&aacute;s frecuente de distr&eacute;s respiratorio agudo&#63;</legend>
+                  <input type="checkbox" name="checkbox3a" id="checkbox3a" class="custom" />
+                  <label for="checkbox3a">A) Politraumatismo</label>
+
+                  <input type="checkbox" name="checkbox3b" id="checkbox3b" class="custom" />
+                  <label for="checkbox3b">B) Politransfusiones</label>
+
+                  <input type="checkbox" name="checkbox3c" id="checkbox3c" class="custom" />
+                  <label for="checkbox3c">C) Pancreatitis</label>
+
+                  <input type="checkbox" name="checkbox3d" id="checkbox3d" class="custom" />
+                  <label for="checkbox3d">D) Broncoaspiraci&oacute;n</label>
+
+                  <input type="checkbox" name="checkbox3e" id="checkbox3e" class="custom" />
+                  <label for="checkbox3e">E) Sepsis</label>
+                </fieldset>
+            </div>
+
+            <div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-collapsed="true">
+              <h3>Pregunta 4</h3>
+                <fieldset data-role="controlgroup" data-mini="true">
+                  <legend>&iquest;El valor normal del intervalo PR en el adulto, es&#63;</legend>
+                  <input type="checkbox" name="checkbox4a" id="checkbox4a" class="custom" />
+                  <label for="checkbox4a">A) 0,12 – 0,20 segundos</label>
+
+                  <input type="checkbox" name="checkbox4b" id="checkbox4b" class="custom" />
+                  <label for="checkbox4b">B) 0,10 – 0,20 segundos</label>
+
+                  <input type="checkbox" name="checkbox4c" id="checkbox4c" class="custom" />
+                  <label for="checkbox4c">C) 0,12 – 0,22 segundos</label>
+
+                  <input type="checkbox" name="checkbox4d" id="checkbox4d" class="custom" />
+                  <label for="checkbox4d">D) 0,10 – 0,22 segundos</label>
+
+                  <input type="checkbox" name="checkbox4e" id="checkbox4e" class="custom" />
+                  <label for="checkbox4e">E) 0,14 – 0,20 segundos</label>
+                </fieldset>
+            </div>
+
+            <div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-collapsed="true">
+              <h3>Pregunta 5</h3>
+                <fieldset data-role="controlgroup" data-mini="true">
+                  <legend>&iquest;Cu&aacute;l es el primer paso para el diagn&oacute;stico electrocardiogr&aacute;fico de una arritmia&#63;</legend>
+                  <input type="checkbox" name="checkbox5a" id="checkbox5a" class="custom" />
+                  <label for="checkbox5a">A) Identificar las ondas P</label>
+
+                  <input type="checkbox" name="checkbox5b" id="checkbox5b" class="custom" />
+                  <label for="checkbox5b">B) Analizar el intervalo PR</label>
+
+                  <input type="checkbox" name="checkbox5c" id="checkbox5c" class="custom" />
+                  <label for="checkbox5c">C) Analizar los latidos anormales y las pausas</label>
+
+                  <input type="checkbox" name="checkbox5d" id="checkbox5d" class="custom" />
+                  <label for="checkbox5d">D) Valorar la configuración del complejo QRS</label>
+
+                  <input type="checkbox" name="checkbox5e" id="checkbox5e" class="custom" />
+                  <label for="checkbox5e">E) Valorar la duración del complejo QRS</label>
+                </fieldset>
+            </div>
+
+            <div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-collapsed="true">
+              <h3>Pregunta 6</h3>
+                <fieldset data-role="controlgroup" data-mini="true">
+                  <legend>&iquest;Cu&aacute;l de los siguientes tratamientos se ha mostrado efectivo para el tratamiento de la acalasia&#63;</legend>
+                  <input type="checkbox" name="checkbox6a" id="checkbox6a" class="custom" />
+                  <label for="checkbox6a">A) Los nitritos de acción prolongada</label>
+
+                  <input type="checkbox" name="checkbox6b" id="checkbox6b" class="custom" />
+                  <label for="checkbox6b">B) El nifedipino</label>
+
+                  <input type="checkbox" name="checkbox6c" id="checkbox6c" class="custom" />
+                  <label for="checkbox6c">C) La dilatación endoscópica</label>
+
+                  <input type="checkbox" name="checkbox6d" id="checkbox6d" class="custom" />
+                  <label for="checkbox6d">D) El tratamiento quirúrgico</label>
+
+                  <input type="checkbox" name="checkbox6e" id="checkbox6e" class="custom" />
+                  <label for="checkbox6e">E) Todas las anteriores</label>
+                </fieldset>
+            </div>
+
+            <div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-collapsed="true">
+              <h3>Pregunta 7</h3>
+                <fieldset data-role="controlgroup" data-mini="true">
+                  <legend>&iquest;La t&eacute;cnica quirúrgica de elección en la acalasia es&#63;</legend>
+                  <input type="checkbox" name="checkbox7a" id="checkbox7a" class="custom" />
+                  <label for="checkbox7a">A) La cardiomiotom&iacute;a de Heller</label>
+
+                  <input type="checkbox" name="checkbox7b" id="checkbox7b" class="custom" />
+                  <label for="checkbox7b">B) La esofagectom&iacute;a total</label>
+
+                  <input type="checkbox" name="checkbox7c" id="checkbox7c" class="custom" />
+                  <label for="checkbox7c">C) La funduplicatura tipo Nissen</label>
+
+                  <input type="checkbox" name="checkbox7d" id="checkbox7d" class="custom" />
+                  <label for="checkbox7d">D) La plastia de Thal</label>
+
+                  <input type="checkbox" name="checkbox7e" id="checkbox7e" class="custom" />
+                  <label for="checkbox7e">E) La pexia de Hill</label>
+                </fieldset>
+            </div>
+
+            <div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-collapsed="true">
+              <h3>Pregunta 8</h3>
+                <fieldset data-role="controlgroup" data-mini="true">
+                  <legend>&iquest;Cu&aacute;l es la inmunoglobulina predominante en las secreciones externas&#63;</legend>
+                  <input type="checkbox" name="checkbox8a" id="checkbox8a" class="custom" />
+                  <label for="checkbox8a">A) IgM</label>
+
+                  <input type="checkbox" name="checkbox8b" id="checkbox8b" class="custom" />
+                  <label for="checkbox8b">B) IgA</label>
+
+                  <input type="checkbox" name="checkbox8c" id="checkbox8c" class="custom" />
+                  <label for="checkbox8c">C) IgD</label>
+
+                  <input type="checkbox" name="checkbox8d" id="checkbox8d" class="custom" />
+                  <label for="checkbox8d">D) IgE</label>
+
+                  <input type="checkbox" name="checkbox8e" id="checkbox8e" class="custom" />
+                  <label for="checkbox8e">E) IgG</label>
+                </fieldset>
+            </div>
+
+            <div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-collapsed="true">
+              <h3>Pregunta 9</h3>
+                <fieldset data-role="controlgroup" data-mini="true">
+                  <legend>&iquest;La enfermedad humana por excelencia que involucra a las quimiocinas y sus receptores es&#63;</legend>
+                  <input type="checkbox" name="checkbox9a" id="checkbox9a" class="custom" />
+                  <label for="checkbox9a">A) Psoriasis</label>
+
+                  <input type="checkbox" name="checkbox9b" id="checkbox9b" class="custom" />
+                  <label for="checkbox9b">B) Asma</label>
+
+                  <input type="checkbox" name="checkbox9c" id="checkbox9c" class="custom" />
+                  <label for="checkbox9c">C) Infección por el VIH</label>
+
+                  <input type="checkbox" name="checkbox9d" id="checkbox9d" class="custom" />
+                  <label for="checkbox9d">D) Infección por el VHC</label>
+
+                  <input type="checkbox" name="checkbox9e" id="checkbox9e" class="custom" />
+                  <label for="checkbox9e">E) Esclerosis múltiple</label>
+                </fieldset>
+            </div>
+
+            <div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-collapsed="true">
+              <h3>Pregunta 10</h3>
+                <fieldset data-role="controlgroup" data-mini="true">
+                  <legend>&iquest;Cu&aacute;l de los siguientes virus se ha relacionado con la miocarditis v&iacute;rica aguda&#63;</legend>
+                  <input type="checkbox" name="checkbox10a" id="checkbox10a" class="custom" />
+                  <label for="checkbox10a">A) Virus Coxsackie A y B</label>
+
+                  <input type="checkbox" name="checkbox10b" id="checkbox10b" class="custom" />
+                  <label for="checkbox10b">B) Virus ECHO</label>
+
+                  <input type="checkbox" name="checkbox10c" id="checkbox10c" class="custom" />
+                  <label for="checkbox10c">C) Virus de la poliomielitis</label>
+
+                  <input type="checkbox" name="checkbox10d" id="checkbox10d" class="custom" />
+                  <label for="checkbox10d">D) Virus de la gripe</label>
+
+                  <input type="checkbox" name="checkbox10e" id="checkbox10e" class="custom" />
+                  <label for="checkbox10e">E) Todos los anteriores</label>
+                </fieldset>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="footer" data-role="footer" data-id="footer1" data-position="fixed" data-tap-toggle="false" >
+          <div id="navbar" data-role="navbar" >
+              <ul>
+                  <li><a id="reset-button" href="#" data-icon="flat-cross" data-theme="f" onclick='document.getElementById("exam-form").reset(); '>Limpiar</a></li>                         
+                  <li><a id="califica-button" href="#exam-sol-page" data-icon="flat-checkround" data-theme="f" onclick="stopTimer(); calificarSimu(); ">Calificar</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+    
+</html> 

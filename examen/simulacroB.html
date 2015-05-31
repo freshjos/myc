@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+ 
+  <!-- /pagina de examen simulacro  -->
+  <div  id="simulacroB" data-role="page">
+      <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header" data-theme="f">
+          <a href="#seleccionSimulacro"  data-role="button" data-icon="arrow-l" data-inline="true" onclick="stopTimerB(); resettb(); document.getElementById('botonB').disabled=false;">&nbsp;</a>
+          <h1>Simulacro 2015</h1>
+        <a data-role="button" data-icon="flat-time"><span id="tiempoB">02:00:00</span></a>
+      </div>
+      <div data-role="content">
+        <form id="examFormB" action="#">
+          <h2>Simulacro Tema B</h2>
+          <label for="medico">Nombres </label>
+          <input type="text" name="medico" id="medico" data-mini="true" placeholder="Dr Hide"/>
+          <label for="address">Email<span class="small-text">(optional)</span></label>
+          <input type="text" name="address" id="address" data-mini="true" placeholder="juanperez@correo.com"/>
+
+          <div data-role="collapsible-set" data-theme="f" data-content-theme="f">
+
+            <div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-collapsed="false">
+              <h3>Pregunta 1</h3>
+                <fieldset data-role="controlgroup" data-mini="true">
+                  <legend>&iquest;Qu&eacute; estructura separa cada fibra card&iacute;aca&#63;</legend>
+
+                  <input type="checkbox" name="checkbox1a" id="checkbox1a" class="custom" />
+                  <label for="checkbox1a">A) Las l&iacute;neas Z</label>
+
+                  <input type="checkbox" name="checkbox1b" id="checkbox1b" class="custom" />
+                  <label for="checkbox1b">B) Las sarc&oacute;meras</label>
+
+                  <input type="checkbox" name="checkbox1c" id="checkbox1c" class="custom" />
+                  <label for="checkbox1c">C) Las bandas I</label>
+
+                  <input type="checkbox" name="checkbox1d" id="checkbox1d" class="custom" />
+                  <label for="checkbox1d">D) El sarcolema</label>
+
+                  <input type="checkbox" name="checkbox1e" id="checkbox1e" class="custom" />
+                  <label for="checkbox1e">E) Las fibras card&iacute;acas no est&aacute;n separadas</label>
+                </fieldset>
+            </div>
+ 
+            
+            
+            
+            
+            
+            
+          </div>
+        </form>
+      </div>
+      <div id="footer" data-role="footer" data-id="footer1" data-position="fixed" data-tap-toggle="false" >
+          <div id="navbar" data-role="navbar" >
+              <ul>
+                  <li><a id="reset-button" href="#" data-icon="flat-cross" data-theme="f" onclick='document.getElementById("examFormB").reset(); '>Limpiar</a></li>                         
+                  <li><a id="califica-button" href="#solSimuB" data-icon="flat-checkround" data-theme="f" onclick="alert('Cargando resultado espere un momento:'); document.getElementById('botonB').disabled=false; stopTimerB(); calificarSimuB(); ">Calificar</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+    
+</html> 
